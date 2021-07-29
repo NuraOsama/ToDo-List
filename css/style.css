@@ -1,0 +1,52 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.done{
+    text-decoration: line-through !important;
+    color:#ccc;
+}
+
+/*--checkbox--*/
+
+.check-box {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+    .check-box + span {
+        color: #ced4da;
+        vertical-align: middle;
+    }
+
+    .check-box + span:before {
+        font: 16.5pt FontAwesome;
+        content: '\00f096';
+        display: inline-block;
+        width: 19pt;
+    }
+    .check-box:checked + span {
+        color: #17a2b8;
+        
+    }
+    .check-box:checked + span:before {
+        content: '\00f046';
+       
+    }
+
+    .check-box:disabled + span {
+        /*color: #1E93C8;*/
+        color: #4594a0;
+    }
+
+    .check-box:not(:disabled) + span:hover:before {
+        /*color: #1E93C8;*/
+        color: #87d7e4;
+    }
+/*--//checkbox--*/
+
